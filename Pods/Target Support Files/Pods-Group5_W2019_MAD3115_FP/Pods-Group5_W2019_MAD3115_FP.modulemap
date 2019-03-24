@@ -1,0 +1,6 @@
+framework module Pods_Group5_W2019_MAD3115_FP {
+  umbrella header "Pods-Group5_W2019_MAD3115_FP-umbrella.h"
+
+  export *
+  module * { export * }
+}
