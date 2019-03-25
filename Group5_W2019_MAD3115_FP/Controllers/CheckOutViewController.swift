@@ -24,6 +24,7 @@ class CheckOutViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet var labelTotalPrice: UILabel!
     let location = ["59 First Gulf Blvd", "25 Peel Centre Drive", "295 Queen St E", "17600 Yonge St", "1355 Kingston Road,"]
     var arr = [(Product,Int)]()
+    var selectedLocation: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +60,9 @@ class CheckOutViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return location[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedLocation = location[row]
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -116,7 +120,8 @@ class CheckOutViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func showHomeView() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let parent = sb.instantiateViewController(withIdentifier: "confirm")
+        let parent = sb.instantiateViewController(withIdentifier: "confirm") as! ConfirmationViewController
+        parent.address = selectedLocation
         self.navigationController?.pushViewController(parent, animated: true)
     }
     

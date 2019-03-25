@@ -10,21 +10,20 @@ import UIKit
 
 class ConfirmationViewController: UIViewController {
 
+    @IBOutlet weak var lblsuburb: UILabel!
+    @IBOutlet weak var lblPostCode: UILabel!
+    @IBOutlet weak var streetName: UILabel!
+    var address: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        streetName.text = self.address
+        lblsuburb.text = ""
+        lblPostCode.text = ""
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func keepShoppingButton(_ sender: UIButton) {
+        navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
     }
-    */
 
 }

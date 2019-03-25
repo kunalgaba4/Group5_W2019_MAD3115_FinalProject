@@ -18,7 +18,6 @@ class AboutUsViewController: UIViewController, WKNavigationDelegate {
         let url = Bundle.main.url(forResource: "home", withExtension: "html")
         myWebView.load(URLRequest(url: url!))
         myWebView.allowsBackForwardNavigationGestures = true
-        
     }
     
 
