@@ -11,9 +11,9 @@ import UIKit
 class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var ivProduct: UIImageView!
-    @IBOutlet weak var lblProductName: UILabel!
+//    @IBOutlet weak var lblProductName: UILabel!
+    @IBOutlet weak var lblDescription: UITextView!
     
-    @IBOutlet weak var ivProductImage: UIImageView!
     var productDetails: Product?
     var cartItems : [String:(Product,Int)]?
     
@@ -32,6 +32,10 @@ class ProductDetailsViewController: UIViewController {
             self.totalPrice = product.price
         }
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+    addLeftRightNavigation()
     }
     
     func configureProductDescription(product: Product){
@@ -56,14 +60,24 @@ class ProductDetailsViewController: UIViewController {
     func configureView(for product: Product, with price: Double) {
         self.navigationItem.title = product.name
         self.navigationController!.navigationItem.title = product.name
-        self.ivProductImage.image = UIImage(named: product.imgURL)
-        self.lblProductName.text = product.name
+        self.ivProduct.image = UIImage(named: product.imgURL)
+//        self.lblProductName.text = product.name
         self.lblPrice.text = "$" + String(format: "%.2f", price)
-//        self.productDescription.text = product.details
+        self.lblDescription.text = product.description
         self.lblQuantity.text = "Quantity: " + String(quantity)
     }
+    
+    func addLeftRightNavigation(){
+        let buttonCheckout = UIBarButtonItem(title: NSLocalizedString("Add to Cart", comment:""), style: UIBarButtonItem.Style.plain, target: self, action: #selector(ProductDetailsViewController.checkout))
+        self.navigationItem.rightBarButtonItem = buttonCheckout
+    }
+    
+    @objc func checkout()
+    {
+        buttonAddToCart()
+    }
 
-    @IBAction func buttonAddToCart(_ sender: UIButton) {
+    func buttonAddToCart(){
 //        productDetails?.price = (Double)(totalPrice)
         ShoppingCart.shoppingCart.addProductToCart(productId: "\(productDetails!.id)", product: productDetails!, quantity: quantity)
         showAlert(title: "Added", message: "Product Successffully added to the cart")

@@ -83,8 +83,6 @@ class CartViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         self.tabBarController!.navigationItem.hidesBackButton = true
                 let buttonCheckout = UIBarButtonItem(title: NSLocalizedString("Checkout", comment:""), style: UIBarButtonItem.Style.plain, target: self, action: #selector(CartViewController.checkout))
                 self.tabBarController!.navigationItem.rightBarButtonItem = buttonCheckout
-//  let buttonProduct = UIBarButtonItem(title: NSLocalizedString("Continue", comment:""), style: UIBarButtonItem.Style.plain, target: self, action: #selector(HomeViewController.product))
-        //        self.navigationItem.leftBarButtonItem = buttonProduct
     }
     
     

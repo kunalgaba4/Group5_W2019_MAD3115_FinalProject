@@ -20,6 +20,8 @@
 		0416EB282241B78D00731126 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416EB272241B78D00731126 /* ProductDetailsViewController.swift */; };
 		0416EB2A22421C2800731126 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0416EB2922421C2800731126 /* GoogleService-Info.plist */; };
 		0416EB2C224229CB00731126 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416EB2B224229CB00731126 /* SignupViewController.swift */; };
+		045324132248BF1700BC8D21 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045324122248BF1700BC8D21 /* AboutUsViewController.swift */; };
+		045324182248C18F00BC8D21 /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 045324172248C18F00BC8D21 /* home.html */; };
 		04FB94152246195200C45875 /* ProductList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FB94142246195200C45875 /* ProductList.plist */; };
 		04FB94172246198D00C45875 /* ProductCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB94162246198C00C45875 /* ProductCartTableViewCell.swift */; };
 		04FB941A22461D0D00C45875 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB941822461D0D00C45875 /* CartViewController.swift */; };
@@ -65,6 +67,8 @@
 		0416EB272241B78D00731126 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		0416EB2922421C2800731126 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Group5_W2019_MAD3115_FP/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0416EB2B224229CB00731126 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		045324122248BF1700BC8D21 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		045324172248C18F00BC8D21 /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		04FB94142246195200C45875 /* ProductList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductList.plist; sourceTree = "<group>"; };
 		04FB94162246198C00C45875 /* ProductCartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCartTableViewCell.swift; sourceTree = "<group>"; };
 		04FB941822461D0D00C45875 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				0416EAF6223D9D5000731126 /* Modals */,
 				0416EAF4223D9B5100731126 /* Controllers */,
 				0416EAE2223D958800731126 /* AppDelegate.swift */,
+				045324172248C18F00BC8D21 /* home.html */,
 				0416EAE6223D958800731126 /* Main.storyboard */,
 				0416EAE9223D958A00731126 /* Assets.xcassets */,
 				0416EB212241A34F00731126 /* camel.png */,
@@ -161,6 +166,7 @@
 				04FB99F52246A55F00C45875 /* ParentTabBarViewController.swift */,
 				04FB99FC224856C700C45875 /* LoginSignupViewController.swift */,
 				04FB9A092248ABE300C45875 /* ConfirmationViewController.swift */,
+				045324122248BF1700BC8D21 /* AboutUsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 				04FB99E72246292E00C45875 /* beer.png in Resources */,
 				04FB99E32246292E00C45875 /* clothes.png in Resources */,
 				04FB99E62246292E00C45875 /* shirt.png in Resources */,
+				045324182248C18F00BC8D21 /* home.html in Resources */,
 				0416EAED223D958A00731126 /* LaunchScreen.storyboard in Resources */,
 				04FB99EB2246292E00C45875 /* Stanley.png in Resources */,
 				04FB99ED22467DC900C45875 /* mobi-shop-complete-shopping-cart-with-admin-panel-3956_imgs_3956.png in Resources */,
@@ -397,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045324132248BF1700BC8D21 /* AboutUsViewController.swift in Sources */,
 				04FB99FD224856C700C45875 /* LoginSignupViewController.swift in Sources */,
 				04FB941B22461D0D00C45875 /* CheckOutViewController.swift in Sources */,
 				0416EB282241B78D00731126 /* ProductDetailsViewController.swift in Sources */,

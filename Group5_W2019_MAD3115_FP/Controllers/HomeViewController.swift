@@ -50,21 +50,16 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     func addLeftRightNavigation(){
         self.tabBarController!.navigationItem.hidesBackButton = true
-        let buttonCheckout = UIBarButtonItem(title: NSLocalizedString("", comment:""), style: UIBarButtonItem.Style.plain, target: self, action: #selector(HomeViewController.checkout))
+        let buttonCheckout = UIBarButtonItem(title: NSLocalizedString("About Us", comment:""), style: UIBarButtonItem.Style.plain, target: self, action: #selector(HomeViewController.checkout))
         self.tabBarController!.navigationItem.rightBarButtonItem = buttonCheckout
     }
     
     
-    @objc func product()
-    {
-        print("Product")
-//        let productVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProductViewController") as! ProductViewController
-//        self.navigationController?.pushViewController(productVC, animated: true)
-        
-    }
     @objc func checkout()
     {
-        print("Checkout")
+        let checkOutVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AboutUsViewController") as! AboutUsViewController
+        self.navigationController?.pushViewController(checkOutVc, animated: true)
+        
     }
     
     
