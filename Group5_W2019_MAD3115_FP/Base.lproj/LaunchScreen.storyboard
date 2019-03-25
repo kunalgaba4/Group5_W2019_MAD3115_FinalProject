@@ -18,17 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobi-shop-complete-shopping-cart-with-admin-panel-3956_imgs_3956.png" translatesAutoresizingMaskIntoConstraints="NO" id="zzl-hw-fey">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Shopping App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAB-5r-Yqo">
+                                <rect key="frame" x="24" y="315" width="327" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zzl-hw-fey" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6uk-Mq-iZW"/>
-                            <constraint firstItem="zzl-hw-fey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J5p-4d-WO4"/>
-                            <constraint firstItem="zzl-hw-fey" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="n0i-Ly-IeF"/>
-                            <constraint firstItem="zzl-hw-fey" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qsV-66-joR"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.4099290371" green="0.61993324760000001" blue="0.5882346034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.40992903709411621" green="0.61993324756622314" blue="0.58823460340499878" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -37,7 +36,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="mobi-shop-complete-shopping-cart-with-admin-panel-3956_imgs_3956.png" width="1280" height="1920"/>
-    </resources>
 </document>

@@ -24,6 +24,8 @@ class CartViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.parent?.navigationItem.title = "Cart"
+
         //To reduce redundancy
         if arr.count>0{
             arr.removeAll()

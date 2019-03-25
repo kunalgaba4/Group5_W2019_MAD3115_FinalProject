@@ -26,8 +26,8 @@ class ProductTableViewCell: UITableViewCell {
     
     func configureEachCell(product: Product){
         self.lblProductName.text="\(product.description)"
-        self.lblProductPrice.text = "$ Price :\(product.price)"
-        var check = UIImage(named: product.imgURL)
+        self.lblProductPrice.text = "Price : $\(product.price)"
+        let check = UIImage(named: product.imgURL)
         self.ivProductImage.image = check
     }
 

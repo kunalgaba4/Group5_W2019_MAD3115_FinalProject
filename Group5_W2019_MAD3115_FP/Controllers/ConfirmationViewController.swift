@@ -1,31 +1,22 @@
 //
-//  SignupViewController.swift
+//  ConfirmationViewController.swift
 //  Group5_W2019_MAD3115_FP
 //
-//  Created by Cheeku on 2019-03-20.
+//  Created by Cheeku on 2019-03-25.
 //  Copyright © 2019 Cheeku. All rights reserved.
 //
 
 import UIKit
-import Firebase
-class SignupViewController: UIViewController {
 
-    @IBOutlet weak var textFieldEmail: UITextField!
-    @IBOutlet weak var textFieldPassword: UITextField!
-    @IBOutlet weak var textFieldConfirmPassword: UITextField!
+class ConfirmationViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func buttonRegister(_ sender: UIButton) {
-        let email = textFieldEmail.text
-        let pass = textFieldPassword.text
-    }
-    
-    
-    
+
     /*
     // MARK: - Navigation
 

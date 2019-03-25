@@ -41,6 +41,11 @@
 		04FB99EF2246961400C45875 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB99EE2246961400C45875 /* ProfileViewController.swift */; };
 		04FB99F2224699F900C45875 /* UpdateLoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB99F1224699F900C45875 /* UpdateLoginProtocol.swift */; };
 		04FB99F62246A55F00C45875 /* ParentTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB99F52246A55F00C45875 /* ParentTabBarViewController.swift */; };
+		04FB99FA2248562F00C45875 /* AMInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB99F82248562F00C45875 /* AMInputView.swift */; };
+		04FB99FB2248562F00C45875 /* AMInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FB99F92248562F00C45875 /* AMInputView.xib */; };
+		04FB99FD224856C700C45875 /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB99FC224856C700C45875 /* LoginSignupViewController.swift */; };
+		04FB9A0022486AEF00C45875 /* ExtensionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB99FF22486AEF00C45875 /* ExtensionUtil.swift */; };
+		04FB9A0A2248ABE300C45875 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB9A092248ABE300C45875 /* ConfirmationViewController.swift */; };
 		47C4A858F623023FA3225F92 /* Pods_Group5_W2019_MAD3115_FP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D64B8C7159EC1154F30DB0E /* Pods_Group5_W2019_MAD3115_FP.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +86,11 @@
 		04FB99EE2246961400C45875 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04FB99F1224699F900C45875 /* UpdateLoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLoginProtocol.swift; sourceTree = "<group>"; };
 		04FB99F52246A55F00C45875 /* ParentTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTabBarViewController.swift; sourceTree = "<group>"; };
+		04FB99F82248562F00C45875 /* AMInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMInputView.swift; sourceTree = "<group>"; };
+		04FB99F92248562F00C45875 /* AMInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMInputView.xib; sourceTree = "<group>"; };
+		04FB99FC224856C700C45875 /* LoginSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
+		04FB99FF22486AEF00C45875 /* ExtensionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUtil.swift; sourceTree = "<group>"; };
+		04FB9A092248ABE300C45875 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 		0D64B8C7159EC1154F30DB0E /* Pods_Group5_W2019_MAD3115_FP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Group5_W2019_MAD3115_FP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63EE4F18D269D57080561B /* Pods-Group5_W2019_MAD3115_FP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Group5_W2019_MAD3115_FP.release.xcconfig"; path = "Target Support Files/Pods-Group5_W2019_MAD3115_FP/Pods-Group5_W2019_MAD3115_FP.release.xcconfig"; sourceTree = "<group>"; };
 		EA088DA46BD7809074B5E721 /* Pods-Group5_W2019_MAD3115_FP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Group5_W2019_MAD3115_FP.debug.xcconfig"; path = "Target Support Files/Pods-Group5_W2019_MAD3115_FP/Pods-Group5_W2019_MAD3115_FP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +130,8 @@
 		0416EAE1223D958800731126 /* Group5_W2019_MAD3115_FP */ = {
 			isa = PBXGroup;
 			children = (
+				04FB99FE22486AB200C45875 /* Extensions */,
+				04FB99F72248562F00C45875 /* AMInputView */,
 				04FB99F0224699D200C45875 /* Protocol */,
 				04FB99D32246292E00C45875 /* ImageAssets */,
 				04FB9413224618A600C45875 /* Plist */,
@@ -147,6 +159,8 @@
 				0416EB2B224229CB00731126 /* SignupViewController.swift */,
 				04FB99EE2246961400C45875 /* ProfileViewController.swift */,
 				04FB99F52246A55F00C45875 /* ParentTabBarViewController.swift */,
+				04FB99FC224856C700C45875 /* LoginSignupViewController.swift */,
+				04FB9A092248ABE300C45875 /* ConfirmationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +218,23 @@
 				04FB99F1224699F900C45875 /* UpdateLoginProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		04FB99F72248562F00C45875 /* AMInputView */ = {
+			isa = PBXGroup;
+			children = (
+				04FB99F82248562F00C45875 /* AMInputView.swift */,
+				04FB99F92248562F00C45875 /* AMInputView.xib */,
+			);
+			path = AMInputView;
+			sourceTree = "<group>";
+		};
+		04FB99FE22486AB200C45875 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04FB99FF22486AEF00C45875 /* ExtensionUtil.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B6F7AB831B8130B0D9E31C7B /* Frameworks */ = {
@@ -300,6 +331,7 @@
 				04FB99E22246292E00C45875 /* marvel.png in Resources */,
 				0416EB222241A34F00731126 /* camel.png in Resources */,
 				04FB99EA2246292E00C45875 /* bag.png in Resources */,
+				04FB99FB2248562F00C45875 /* AMInputView.xib in Resources */,
 				0416EAE8223D958800731126 /* Main.storyboard in Resources */,
 				04FB99E02246292E00C45875 /* watch.png in Resources */,
 			);
@@ -365,17 +397,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FB99FD224856C700C45875 /* LoginSignupViewController.swift in Sources */,
 				04FB941B22461D0D00C45875 /* CheckOutViewController.swift in Sources */,
 				0416EB282241B78D00731126 /* ProductDetailsViewController.swift in Sources */,
 				04FB99F62246A55F00C45875 /* ParentTabBarViewController.swift in Sources */,
 				0416EAE5223D958800731126 /* LoginViewController.swift in Sources */,
 				04FB941A22461D0D00C45875 /* CartViewController.swift in Sources */,
+				04FB99FA2248562F00C45875 /* AMInputView.swift in Sources */,
 				0416EB2C224229CB00731126 /* SignupViewController.swift in Sources */,
+				04FB9A0A2248ABE300C45875 /* ConfirmationViewController.swift in Sources */,
 				0416EB202241897600731126 /* ProductTableViewCell.swift in Sources */,
 				0416EB262241ACF000731126 /* User.swift in Sources */,
 				04FB941D22461D4C00C45875 /* ShoppingCart.swift in Sources */,
 				04FB94172246198D00C45875 /* ProductCartTableViewCell.swift in Sources */,
 				0416EB252241ACF000731126 /* Product.swift in Sources */,
+				04FB9A0022486AEF00C45875 /* ExtensionUtil.swift in Sources */,
 				04FB99F2224699F900C45875 /* UpdateLoginProtocol.swift in Sources */,
 				04FB99EF2246961400C45875 /* ProfileViewController.swift in Sources */,
 				0416EAE3223D958800731126 /* AppDelegate.swift in Sources */,

@@ -103,16 +103,21 @@ class CheckOutViewController: UIViewController, UITableViewDataSource, UITableVi
             return
         }
         else{
-           showAlert(title: "Confirm Payment", message: "press ok to checkout")
+            self.cardNumber.text = ""
+            self.cardExpiryMonth.text = ""
+            self.cardExpiryYear.text = ""
+            self.cardCvv.text = ""
+            self.lblPrice.text = "$ 0.0"
+            ShoppingCart.shoppingCart.removeEverythingFromCart()
+            showHomeView()
         }
         
-        self.cardNumber.text = ""
-        self.cardExpiryMonth.text = ""
-        self.cardExpiryYear.text = ""
-        self.cardCvv.text = ""
-        self.lblPrice.text = "$ 0.0"
-        ShoppingCart.shoppingCart.removeEverythingFromCart()
-        
+    }
+    
+    func showHomeView() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let parent = sb.instantiateViewController(withIdentifier: "confirm")
+        self.navigationController?.pushViewController(parent, animated: true)
     }
     
        

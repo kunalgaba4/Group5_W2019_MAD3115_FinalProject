@@ -8,29 +8,7 @@
 
 import UIKit
 import Firebase
-class LoginViewController: UIViewController,UpdateLoginProtocol {
-    func updateLogin() {
-        print("Method is called")
-        if rememberMeSwitch.isOn{
-            if let email = UserDefaults.standard.string(forKey: "userEmail"){
-                usernameTextField.text = email
-                if let pass = UserDefaults.standard.string(forKey: "pass"){
-                    passwordTextField.text = pass
-                    rememberMeSwitch.setOn(true, animated: false)
-                }else{
-                    rememberMeSwitch.setOn(false, animated: false)
-                }
-            }
-        }else{
-            let userdefault = UserDefaults.standard
-            userdefault.removeObject(forKey: "userEmail")
-            userdefault.removeObject(forKey: "pass")
-            usernameTextField.text = ""
-            passwordTextField.text = ""
-        }
-    }
-    
-
+class LoginViewController: UIViewController{
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var rememberMeSwitch: UISwitch!
@@ -103,12 +81,4 @@ class LoginViewController: UIViewController,UpdateLoginProtocol {
     }
 }
 
-extension UIViewController{
-    
-    func showAlert(title: String, message: String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        present(alert, animated: true)
-    }
-}
 
